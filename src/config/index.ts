@@ -4,7 +4,7 @@ import fs from 'fs';
 import { ILocaleDict } from '../interfaces/system';
 import * as locales from '../locales';
 
-process.env.NODE_ENV ??= 'development';
+// process.env.NODE_ENV ??= 'development';
 
 /** To create JWT key files run this command :
  * ssh-keygen -t rsa -b 4096 -m PEM -f jwtRS256.key
@@ -26,7 +26,7 @@ export default {
   origins: process.env.ORIGINS,
   jwtSecret: RSA_PRIVATE_KEY,
   locale_dict,
-  nodeEnv: process.env.NODE_ENV,
+  nodeEnv: 'development',
   S3: {
     access_key: process.env.S3_ACCESS_KEY,
     secret_key: process.env.S3_SECRET_KEY,
