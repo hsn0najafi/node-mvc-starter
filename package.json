@@ -1,0 +1,60 @@
+{
+  "name": "node-mvc-pro",
+  "version": "1.0.0",
+  "description": "Express.js MVC architecture for big monolithic APIs",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "start": "node .",
+    "start:dev": "cross-env NODE_ENV=prod nodemon .",
+    "test": "cross-env NODE_ENV=test jest",
+    "test:watch": "cross-env NODE_ENV=test jest --watchAll",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hsn8najafi/node-mvc-pro.git"
+  },
+  "author": "Hosein Najafi <hsn8najafi@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/hsn8najafi/node-mvc-pro/issues"
+  },
+  "homepage": "https://github.com/hsn8najafi/node-mvc-pro#readme",
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.2",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/mime-types": "^2.1.1",
+    "@types/multer": "^1.4.7",
+    "@types/multer-s3": "^2.7.12",
+    "@types/node": "^17.0.29",
+    "@types/supertest": "^2.0.12",
+    "@types/validator": "^13.7.2",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2",
+    "supertest": "^6.2.3",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "argon2": "^0.28.5",
+    "aws-sdk": "^2.1122.0",
+    "celebrate": "^15.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "http-status": "^1.5.1",
+    "jsonwebtoken": "^8.5.1",
+    "mime-types": "^2.1.35",
+    "mongoose": "^6.3.1",
+    "multer": "^1.4.4",
+    "multer-s3": "^2.10.0",
+    "reflect-metadata": "^0.1.13",
+    "validator": "^13.7.0"
+  }
+}
